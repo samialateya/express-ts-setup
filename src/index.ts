@@ -1,6 +1,6 @@
-/* eslint-disable no-console */
 import { createServer, RequestListener } from 'node:http';
 import app from './app';
+import { logger } from './helpers/logger';
 import {
   uncaughtExceptionHandler,
   unhandledRejectionHandler,
@@ -9,10 +9,11 @@ import {
 /* ------------------------------- Http Server ------------------------------ */
 const server = createServer(app as RequestListener);
 const port = process.env.PORT ?? 3000;
+const environment = process.env.NODE_ENV ?? 'development';
 
 /* ----------------------------- Listener And Serve ----------------------------- */
 server.listen(port, () => {
-  console.log(`listening on port ${String(port)}`);
+  logger.info({}, `Server is running on port ${port} in ${environment} mode`);
 });
 
 /* ----------------------------- process controller ---------------------------- */
