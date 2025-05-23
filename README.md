@@ -14,7 +14,6 @@ This project provides a ready-to-use Express.js setup with TypeScript, designed 
 - **Docker** and **Docker Compose** for easy containerization and deployment
 - **GitHub Actions** for CI (linting, type-checking, and unit tests)
 - **Pino** for logging
-- **express-async-errors** for async error handling
 - **Nodemon** and **ts-node** for smooth development experience
 
 
