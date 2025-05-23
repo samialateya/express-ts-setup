@@ -38,7 +38,7 @@ export const errorHandlerMiddleware = (
       query: request.query,
       body: request.body,
     },
-    'run time error'
+    'runtime error'
   );
   response.status(500).end();
 };
