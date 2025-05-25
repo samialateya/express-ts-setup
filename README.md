@@ -16,25 +16,28 @@ This project provides a ready-to-use Express.js setup with TypeScript, designed 
 - **Pino** for logging
 - **Nodemon** and **ts-node** for smooth development experience
 
-
 ## Getting Started
 
 1. **Install dependencies**
+
    ```sh
    npm install
    ```
 
 2. **Run in development mode**
+
    ```sh
    npm run dev
    ```
 
 3. **Build for production**
+
    ```sh
    npm run build
    ```
 
 4. **Run tests**
+
    ```sh
    npm run test
    ```
@@ -77,6 +80,7 @@ I welcome contributions! Please follow these steps:
 
 - [Express](https://expressjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Swagger](https://swagger.io/)
 - [Jest](https://jestjs.io/)
 - [Supertest](https://github.com/visionmedia/supertest)
 - [ESLint](https://eslint.org/)
@@ -88,7 +92,6 @@ I welcome contributions! Please follow these steps:
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [GitHub Actions](https://github.com/features/actions)
-
 
 ### GitHub Actions
 
@@ -105,4 +108,5 @@ All pull requests will automatically trigger these checks. Please make sure your
 ISC
 
 ---
+
 Happy coding!
