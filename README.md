@@ -9,6 +9,7 @@ This project provides a ready-to-use Express.js setup with TypeScript, designed 
 - **Express.js** for fast, unopinionated web server development
 - **TypeScript** for type safety and modern JavaScript features
 - **Pre-configured scripts** for development, building, linting, formatting, and testing
+- **Swagger** for API documentation
 - **Jest** for unit testing
 - **ESLint** and **Prettier** for code quality and formatting
 - **Docker** and **Docker Compose** for easy containerization and deployment
@@ -16,30 +17,71 @@ This project provides a ready-to-use Express.js setup with TypeScript, designed 
 - **Pino** for logging
 - **Nodemon** and **ts-node** for smooth development experience
 
-
 ## Getting Started
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [Docker](https://www.docker.com/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/samialateya/express-ts-setup.git
+   cd express-ts-setup
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### API Documentation
+
+This project uses **Swagger** for interactive API documentation.  
+Once the server is running, visit [http://localhost:3000/api-docs](http://localhost:3000/api-docs) to view and test the API endpoints.
+
+### Rapid Development with Docker Compose
+
+To quickly launch the development environment using Docker Compose, run:
+
+```bash
+docker-compose up
+```
+
+This will start all necessary services and make the API available locally.
+
+## Scripts
+
 1. **Install dependencies**
+
    ```sh
    npm install
    ```
 
 2. **Run in development mode**
+
    ```sh
    npm run dev
    ```
 
 3. **Build for production**
+
    ```sh
    npm run build
    ```
 
 4. **Run tests**
+
    ```sh
    npm run test
    ```
 
 5. **Lint and format code**
+
    ```sh
    npm run lint
    npm run format
@@ -58,19 +100,25 @@ I welcome contributions! Please follow these steps:
 1. **Fork the repository** and create your branch from `main`.
 2. **Write clear, concise commit messages.**
 3. **Ensure your code passes linting and formatting:**
+
    ```sh
    npm run lint
    npm run format:check
    ```
+
 4. **Add or update tests as appropriate.**
 5. **Check that all tests pass:**
+
    ```sh
    npm run test
    ```
+
 6. **Check type safety:**
+
    ```sh
    npm run ts-check
    ```
+
 7. **Open a pull request** with a clear description of your changes.
 
 ## Technologies Used
@@ -89,7 +137,6 @@ I welcome contributions! Please follow these steps:
 - [Docker Compose](https://docs.docker.com/compose/)
 - [GitHub Actions](https://github.com/features/actions)
 
-
 ### GitHub Actions
 
 This repository uses [GitHub Actions](https://github.com/features/actions) for continuous integration. The following workflows are already set up:
@@ -105,4 +152,5 @@ All pull requests will automatically trigger these checks. Please make sure your
 ISC
 
 ---
+
 Happy coding!

@@ -21,6 +21,8 @@ COPY --from=builder /usr/app/package*.json ./
 
 RUN npm install --omit=dev && npm cache clean --force
 
+COPY --from=builder /usr/app/spec ./spec
+
 EXPOSE 3000
 
 CMD ["node", "index.js"]

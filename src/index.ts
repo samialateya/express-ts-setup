@@ -1,3 +1,4 @@
+import { config } from 'dotenv';
 import { createServer, RequestListener } from 'node:http';
 import app from './app';
 import { logger } from './helpers/logger';
@@ -5,6 +6,8 @@ import {
   uncaughtExceptionHandler,
   unhandledRejectionHandler,
 } from './middleware/process-error-handler';
+
+config(); // Load environment variables from .env file
 
 /* ------------------------------- Http Server ------------------------------ */
 const server = createServer(app as RequestListener);
