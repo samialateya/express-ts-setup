@@ -17,6 +17,7 @@
     "ts-check": "tsc --noEmit"
   },
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^4.21.2",
     "express-async-errors": "^3.1.1",
     "pino": "^9.7.0",
