@@ -1,5 +1,15 @@
 # Express TypeScript Setup
 
+![Express](https://img.shields.io/badge/Express-4.21.2-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue)
+![Node](https://img.shields.io/badge/Node-%3E%3D20.0.0-green)
+![Jest](https://img.shields.io/badge/Jest-29.7.0-green)
+![ESLint](https://img.shields.io/badge/ESLint-9.27.0-purple)
+![Prettier](https://img.shields.io/badge/Prettier-3.5.3-purple)
+![Swagger](https://img.shields.io/badge/Swagger-6.2.8-orange)
+![dotenv](https://img.shields.io/badge/dotenv-16.5.0-yellowgreen)
+![Pino](https://img.shields.io/badge/Pino-9.7.0-yellowgreen)
+
 ## Overview
 
 This project provides a ready-to-use Express.js setup with TypeScript, designed to help developers quickly dive into backend development without spending time on initial configuration. With essential tools and best practices already in place, you can focus on building your application features right away.
@@ -148,10 +158,10 @@ This repository uses [GitHub Actions](https://github.com/features/actions) for c
 
 All pull requests will automatically trigger these checks. Please make sure your code passes all workflows before requesting a review.
 
-## License
+## Acknowledgments
 
-ISC
+This project is inspired by the need for a quick-start template for Express.js applications using TypeScript. It incorporates best practices and modern tools to streamline development.
 
 ---
 
-Happy coding!
+Happy coding! 🚀
